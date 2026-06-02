@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(135deg, #0f172a, #111827);
+  background: transparent;
   margin: 0;
   padding: 10px;
   display: flex;
@@ -10,8 +10,20 @@ body {
   box-sizing: border-box;
 }
 
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 .cabecalho {
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   box-sizing: border-box;
   background: rgba(26, 25, 25, 0.95);
   backdrop-filter: blur(10px);
@@ -92,5 +104,6 @@ body {
 @media (max-width: 437px) {
   .cabecalho {
     width: 100%;
+    max-width: 360px;
   }
 }/*# sourceMappingURL=style.css.map */
